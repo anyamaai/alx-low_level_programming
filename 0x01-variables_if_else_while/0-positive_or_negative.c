@@ -5,8 +5,6 @@
 /**
  * main - program tells if output is zero, positive
  * or negative number
- * @n: variable containing random number
- * @srand(time(0)): random function
  *
  * Return: Always 0 (success)
  */
