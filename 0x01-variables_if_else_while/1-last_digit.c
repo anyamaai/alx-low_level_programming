@@ -5,8 +5,6 @@
 /**
  * main - program checks for the value of the last
  * digit of a random number
- * @n: variable containing random numbers
- * @srand(time(0): random number function
  *
  * Return: Always 0 (success)
  */
