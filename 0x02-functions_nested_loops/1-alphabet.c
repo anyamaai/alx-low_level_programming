@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - program prints alphabets in lowercase
+ * print_alphabet - program prints alphabets in lowercase
  *
  * Return: Always 0 (success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	int iAlphabet;
 
@@ -15,5 +15,5 @@ int main(void)
 		_putchar(iAlphabet);
 		iAlphabet++;
 	}
-	return (0);
+	_putchar('\n');
 }
