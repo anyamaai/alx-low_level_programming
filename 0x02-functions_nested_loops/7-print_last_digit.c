@@ -8,13 +8,15 @@
  */
 int print_last_digit(int r)
 {
-	if (r >= 0)
-	{
-		return (_putchar(r));
-	}
-	else
-	{
+	int iRem;
+
+	if (r < 0)
 		r = -r;
-		return (_putchar(r));
-	}
+	else
+		r = r;
+
+	iRem = r % 10;
+	_putchar(iRem);
+
+	return (iRem);
 }
