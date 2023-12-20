@@ -8,13 +8,9 @@
  */
 int print_last_digit(int r)
 {
-	int iRem;
-
 	if (r < 0)
 		r = -r;
 	else
 		r = r;
-
-	iRem = r % 10;
-	return (iRem);
+	return (r % 10);
 }
