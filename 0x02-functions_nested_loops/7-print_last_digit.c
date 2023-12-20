@@ -10,6 +10,6 @@ int print_last_digit(int r)
 {
 	int iRem;
 
-	iRem = r / 10;
+	iRem = r % 10;
 	return (iRem);
 }
