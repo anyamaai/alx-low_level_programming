@@ -16,6 +16,5 @@ int print_last_digit(int r)
 		r = r;
 
 	iRem = r % 10;
-	_putchar(iRem);
 	return (iRem);
 }
