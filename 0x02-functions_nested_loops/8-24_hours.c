@@ -27,5 +27,4 @@ void jack_bauer(void)
 		}
 		iHour++;
 	}
-	return (0);
 }
