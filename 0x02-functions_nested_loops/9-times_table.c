@@ -20,23 +20,23 @@ void times_table(void)
 			sum = 0;
 			sum = iNum1 * iNum2;
 
-			if (sum <= 9 && j < 9)
+			if (sum <= 9 && iNum2 < 9)
 			{
 				_putchar(sum + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 			}
-			if (sum <= 9 && j > 8)
+			if (sum <= 9 && iNum2 > 8)
 			{
 				_putchar(sum + '0');
 			}
-			if (sum > 9 && j < 9)
+			if (sum > 9 && iNum2 < 9)
 			{
 				_putchar((sum / 10) + '0');
 				_putchar((sum % 10) + '0');
 			}
-			if (sum > 9 && j > 8)
+			if (sum > 9 && iNum2 > 8)
 			{
 				putchar((sum / 10) + '0');
 				putchar((sum % 10) + '0');
