@@ -35,6 +35,8 @@ void times_table(void)
 			{
 				_putchar((sum / 10) + '0');
 				_putchar((sum % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 			if (sum > 9 && iNum2 > 8)
 			{
@@ -43,6 +45,7 @@ void times_table(void)
 			}
 			iNum2++;
 		}
+		_putchar('\n');
 		iNum1++;
 	}
 }
