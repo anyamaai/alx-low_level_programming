@@ -38,8 +38,8 @@ void times_table(void)
 			}
 			if (sum > 9 && iNum2 > 8)
 			{
-				putchar((sum / 10) + '0');
-				putchar((sum % 10) + '0');
+				_putchar((sum / 10) + '0');
+				_putchar((sum % 10) + '0');
 			}
 			iNum2++;
 		}
