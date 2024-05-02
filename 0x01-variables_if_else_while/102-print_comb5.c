@@ -15,14 +15,9 @@ int main(void)
 	iDigit1 = 0;
 	while (iDigit1 <= 98)
 	{
-		iDigit2 = 0;
+		iDigit2 = iDigit1 + 1;
 		while (iDigit2 <= 99)
 		{
-			if (iDigit1 == iDigit2)
-			{
-				iDigit2 = iDigit2 + 1;
-			}
-
 			putchar('0' + (iDigit1 / 10));
 			putchar('0' + (iDigit1 % 10));
 			putchar(' ');
