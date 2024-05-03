@@ -19,6 +19,7 @@ void times_table(void)
 		while (iNum2 <= iTable)
 		{
 			int iproduct = iNum1 * iNum2;
+
 			if (iNum2 == 0)
 			{
 				_putchar((iproduct % 10) + '0');
