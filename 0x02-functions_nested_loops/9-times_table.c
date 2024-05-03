@@ -7,41 +7,35 @@
  */
 void times_table(void)
 {
+	const int iTable = 9;
 	int iNum1;
 	int iNum2;
-	int sum;
+
 
 	iNum1 = 0;
-	while (iNum1 <= 9)
+	while (iNum1 <= iTable)
 	{
 		iNum2 = 0;
-		while (iNum2 <= 9)
+		while (iNum2 <= iTable)
 		{
-			sum = 0;
-			sum = iNum1 * iNum2;
-
-			if (sum <= 9 && iNum2 < 9)
+			iproduct = iNum1 * iNum2;
+			if (iNum2 == 0)
 			{
-				_putchar(sum + '0');
+				_putchar((iproduct % 10) + '0');
+			}
+			else
+			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
-			}
-			if (sum <= 9 && iNum2 > 8)
-			{
-				_putchar(sum + '0');
-			}
-			if (sum > 9 && iNum2 < 9)
-			{
-				_putchar((sum / 10) + '0');
-				_putchar((sum % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
-			}
-			if (sum > 9 && iNum2 > 8)
-			{
-				_putchar((sum / 10) + '0');
-				_putchar((sum % 10) + '0');
+				if (iproduct <= 9)
+				{
+					_putchar(' ');
+				}
+				if (iproduct > 9)
+				{
+					_putchar((iproduct / 10) + '0');
+				}
+				_putchar((iproduct % 10) + '0');
 			}
 			iNum2++;
 		}
