@@ -16,10 +16,10 @@ void print_diagonal(int n)
 	else
 	{
 		iLine1 = 1;
-		while (iLine1 <=n)
+		while (iLine1 <= n)
 		{
 			iLine2 = 1;
-			while (iLine2 <= iLine1)
+			while (iLine2 < iLine1)
 			{
 				_putchar(' ');
 				iLine2++;
