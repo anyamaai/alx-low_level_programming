@@ -9,23 +9,30 @@ void print_triangle(int size)
 {
 	int iLine1, iLine2;
 
-	iLine1 = 1;
-	while (iLine1 <= size)
+	if (size <= 0)
 	{
-		iLine2 = 1;
-		while (iLine2 <= size)
-		{
-			if (iLine1 + iLine2 <= size)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar('#');
-			}
-			iLine2++;
-		}
 		_putchar('\n');
-		iLine1++;
+	}
+	else
+	{
+		iLine1 = 1;
+		while (iLine1 <= size)
+		{
+			iLine2 = 1;
+			while (iLine2 <= size)
+			{
+				if (iLine1 + iLine2 <= size)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
+				iLine2++;
+			}
+			_putchar('\n');
+			iLine1++;
+		}
 	}
 }
